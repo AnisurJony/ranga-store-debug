@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>Hero Shopping Mall</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
 
@@ -32,7 +32,7 @@
         <input id="input-field" class="search-field w-25 py-2 px-2 border-0 rounded-2 bg-light my-5"
           placeholder="search you favorite product" type="text">
 
-        <button type="button" onclick="/*loadProducts()*/"
+        <button id="search-button" type="button" onclick="loadProducts()"
           class="rounded bg-success bg-opacity-75 border-0 py-2 px-4 my-3 text-white">
           Search
         </button>
@@ -53,11 +53,12 @@
           <!-- <h1></h1> this is the empty h1 for card error in the first row left column -->
         </div>
       </div>
+
       <div class="col-md-3 col-lg-3 col-sm-5  cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
-            <thead>
-              <h1>My-Cart</h1>
+            <thead class="text-warning">
+              <h1 class="text-warning">My-Cart</h1>
               <tr>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -66,39 +67,39 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="text-white">
                 <th>Total Added-Products:</th>
                 <td>: <span id="total-Products">0</span></td> <!-- here not required any $ sign befor product count -->
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr class="text-white">
                 <th>Price</th>
-                <td>:$ <span id="price">0</span></td>
+                <td> &nbsp;:$ <span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr class="text-white">
                 <th>Delivery-Charge</th>
-                <td>:$ <span id="delivery-charge">20</span></td>
+                <td> &nbsp; &nbsp;:$ <span id="delivery-charge">20</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr class="text-white">
                 <th>Total-Tax</th>
                 <td>:$ <span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
-                <th scope="row">Total</th>
-                <td colspan="2">:$ <span id="total">0</span></td>
+              <tr class="text-white">
+                <th>Total</th>
+                <td>:$ <span id="total">0</span></td>
                 <td></td>
               </tr>
             </tbody>
           </table>
-          <div class="parces text-center">
-            <button class="text-center rounded bg-primary bg-opacity-75 border-0 py-1 px-2 text-white">Buy Now</button>
+          <div>
+            <button class="text-center rounded bg-warning bg-opacity-75 border-0 py-1 px-2 ">Buy Now</button>
           </div>
         </div>
       </div>
