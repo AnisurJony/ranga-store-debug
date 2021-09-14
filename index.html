@@ -7,29 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hero Shopping Mall</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <!-- Latest compiled and minified CSS -->
 
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /> -->
+  <!------------------------------- Latest compiled and minified CSS --------------------------------------------->
+
+  <!------------------------- I have updated the version of Bootstrap from previous v3 to v5--------------------->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
 
-  <!-- google Montserrat  font  -->
+  <!------------------------------------------------- google Montserrat  font  ------------------------------------>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
 </head>
 
 <body class="bg-success bg-opacity-25  text-center">
 
   <main class="main">
-
+    <!-------------------------------------------- site Header section -------------------------------->
     <header>
       <h1 class="mt-5 text-success text-opacity-75 ">Hero Shopping Mall</h1>
     </header>
-
+    <!-------------------------------------------- Search box section -------------------------------->
     <section class="container">
 
       <input id="input-field" class="search-field w-50 py-2 px-2 border-0 rounded-3 bg-light my-5"
@@ -42,24 +44,24 @@
 
     </section>
 
-
-
-    <section>
-      <div id="rating-info" class="container">
-        <!-- it is for details information about api but not neccessary as per instruction  -->
-      </div>
-    </section>
+    <!-------------------------------------------- product card section -------------------------------->
 
     <div class="row g-5">
       <div class=" col-md-9">
-        <!---col-md-9 col-lg-9 col-sm-7 -->
+
         <div id="all-products" class="px-5 py-2">
-          <!-- <h1></h1> this is the empty h1 for card error in the first row left column -->
+
+          <!------------------- <h1></h1> this is the empty h1 for card error in the first row left column ---------------->
+
         </div>
+
       </div>
+
+      <!--------------------------------------------shopping cart section -------------------------------->
 
       <div class="col-md-3 col-lg-3 col-sm-5  cart-main">
         <div class="cart" id="my-cart">
+
           <table class="table">
             <thead class="text-warning">
               <h1 class="text-warning">My-Cart</h1>
@@ -73,8 +75,11 @@
             <tbody>
               <tr class="text-white td-value">
                 <th>Total Added-Products:</th>
-                <td>: <span id="total-Products"> 0</span>
-                </td> <!-- here not required any $ sign befor product count -->
+
+                <!---------- not required any $ sign befor product count here --------------->
+
+                <td>: <span id="total-Products"> 0</span></td>
+
                 <td></td>
                 <td></td>
               </tr>
@@ -105,6 +110,9 @@
             </tbody>
           </table>
           <div>
+
+            <!---------------------------------- shopping card button ---------------------------------->
+
             <button type="button" class="text-center rounded bg-warning bg-opacity-75 border-0 py-1 px-2 ">Buy
               Now</button>
           </div>
@@ -113,10 +121,13 @@
     </div>
 
   </main>
+
   <footer></footer>
 
-  <!-- add javascript  file  -->
+  <!------------------------------------------ add javascript  file ------------------------------->
+
   <script src="./js/app.js"></script>
+
 </body>
 
 </html>

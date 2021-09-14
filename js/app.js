@@ -11,7 +11,7 @@ const showProducts = (products) => {
   const allProducts = products.map(pd => pd); //...... I have change the ((pd) => pd) to (pd => pd) single parameter dosen't require paranthaces but it is optional......//
 
   for (const product of allProducts) {
-    const title = product.title.slice(0, 40); //--------------- I have done it for avoiding long title that make the card bad...................//
+    const title = product.title.slice(0, 40); //--------------- I have done it for avoiding long title that make the card bad in decorat...................//
     const image = product.image; //--------------- product.images here it will be product.image ---------------//
 
     const div = document.createElement("div");
