@@ -23,22 +23,26 @@
 </head>
 
 <body class="bg-success bg-opacity-25  text-center">
-  <header>
-    <h1 class="mt-5 text-success text-opacity-75 ">Hero Shopping Mall</h1>
-  </header>
+
   <main class="main">
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field w-25 py-2 px-2 border-0 rounded-2 bg-light my-5"
-          placeholder="search you favorite product" type="text">
 
-        <button id="search-button" type="button" onclick="loadProducts()"
-          class="rounded bg-success bg-opacity-75 border-0 py-2 px-4 my-3 text-white">
-          Search
-        </button>
+    <header>
+      <h1 class="mt-5 text-success text-opacity-75 ">Hero Shopping Mall</h1>
+    </header>
 
-      </div>
-    </div>
+    <section class="container">
+
+      <input id="input-field" class="search-field w-50 py-2 px-2 border-0 rounded-3 bg-light my-5"
+        placeholder="search you favorite product" type="search">
+
+      <button id="search-button" type="button" onclick="loadProducts()"
+        class="rounded-3 bg-success bg-opacity-75 border-0 py-2 px-4 my-3 text-white">
+        Search
+      </button>
+
+    </section>
+
+
 
     <section>
       <div id="rating-info" class="container">
@@ -67,39 +71,42 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="text-white">
+              <tr class="text-white td-value">
                 <th>Total Added-Products:</th>
-                <td>: <span id="total-Products">0</span></td> <!-- here not required any $ sign befor product count -->
+                <td>: <span id="total-Products"> 0</span>
+                </td> <!-- here not required any $ sign befor product count -->
                 <td></td>
                 <td></td>
               </tr>
-              <tr class="text-white">
+              <tr class="text-white td-value">
                 <th>Price</th>
-                <td> &nbsp;:$ <span id="price">0</span></td>
+                <td>: $<span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr class="text-white">
+              <tr class="text-white td-value">
                 <th>Delivery-Charge</th>
-                <td> &nbsp; &nbsp;:$ <span id="delivery-charge">20</span></td>
+                <td>: $<span id="delivery-charge">20</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr class="text-white">
+              <tr class="text-white td-value">
                 <th>Total-Tax</th>
-                <td>:$ <span id="total-tax">0</span></td>
+                <td>: $<span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
-              <tr class="text-white">
+              <tr class="text-white td-value">
                 <th>Total</th>
-                <td>:$ <span id="total">0</span></td>
+                <td>: $<span id="total">0</span></td>
+                <td></td>
                 <td></td>
               </tr>
             </tbody>
           </table>
           <div>
-            <button class="text-center rounded bg-warning bg-opacity-75 border-0 py-1 px-2 ">Buy Now</button>
+            <button type="button" class="text-center rounded bg-warning bg-opacity-75 border-0 py-1 px-2 ">Buy
+              Now</button>
           </div>
         </div>
       </div>
