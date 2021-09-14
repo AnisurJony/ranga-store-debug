@@ -31,7 +31,7 @@ const showProducts = (products) => {
       </div>
       <h3 class="text-success mt-3">${title}</h3>
       <p>Category: ${product.category}</p>
-      <p class="badge bg-dark bg-opacity-75  text-wrap text-warning lh-base mb-2">Average Rating : ${product.rating.rate} <br> ${product.rating.count} Satisfied Customer</p>
+      <p class="badge bg-dark bg-opacity-75  text-wrap text-light lh-base mb-2">Average Rating : ${product.rating.rate} <br> ${product.rating.count} Satisfied Customer</p>
       <h4 class="text-secondary mb-3">Price: $ ${product.price}</h4>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class=" rounded bg-success bg-opacity-75 border-0 py-1 px-2">add to cart</button>
       <button id="details-btn" class="rounded bg-danger bg-opacity-75 border-0 py-1 px-2">Details</button>
