@@ -14,7 +14,7 @@ const loadProducts = () => {
 
 
 
-//-------------------------------------------- show all product in UI-----------------------------------// 
+//-------------------------------------------- show all product -----------------------------------// 
 
 const showProducts = (products) => {
   const allProducts = products.map(pd => pd); //...... I have change the ((pd) => pd) to (pd => pd) single parameter dosen't require paranthaces but it is optional......//
